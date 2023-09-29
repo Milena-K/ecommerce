@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+@import "../../styles/typography";
+
+.products {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+
+  &__title {
+      margin: 3rem 0;
+      text-align: center;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-gap: 2.13rem;
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(3, max-content);
+    }
+  }
+  button {
+      justify-self: center;
+      margin-top: 2rem;
+  }
+}

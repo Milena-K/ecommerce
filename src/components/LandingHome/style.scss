@@ -1,0 +1,61 @@
+@import "../../styles/variables";
+
+.landing {
+    width: 100vw;
+    height: 40rem;
+    background-image: url("../../assets/scandinavian-interior-mockup-wall-decal-background 1.png");
+    background-repeat: no-repeat;
+    background-position: 20%;
+    background-size: cover;
+    position: relative;
+    color: $font_1;
+    &__info {
+        position: absolute;
+        bottom: 8rem;
+        right: 6rem;
+        max-width: 37rem;
+        max-height: 25rem;
+        width: 47vw;
+        height: 35vw;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        background-color: $pink_1;
+        color: white;
+        &-buy {
+            margin-top: auto;
+            padding: 1.66667rem 4.8rem;
+            align-self: start;
+            text-transform: uppercase;
+            background-color: $primary;
+            color: #FFF;
+            border: none;
+            cursor: pointer;
+            font-family: Poppins;
+            font-weight: 700;
+            line-height: normal;
+        }
+        &-title {
+            color: $primary;
+            font-size: 3.46667rem;
+            font-weight: 700;
+            width: 28rem;
+            margin: 0;
+            line-height: 4.33333rem; /* 125% */
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 2.5rem;
+                line-height: 3rem; /* 125% */
+                font-weight: 600;
+
+            }
+        }
+        &-arrival {
+            font-weight: 600;
+            letter-spacing: 0.2rem;
+            color: $font_1;
+        }
+        &-text {
+            color: $font_1;
+        }
+    }
+}

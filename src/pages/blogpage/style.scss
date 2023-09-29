@@ -1,0 +1,24 @@
+.blogs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.skeletons {
+    width: 50vw;
+    max-width: 50rem;
+    margin: 9rem auto;
+
+    .skeleton {
+        margin-bottom: 1rem;
+        &:first-child {
+            height: 10vw;
+        }
+        &:last-of-type{
+            margin-bottom: 5rem;
+        }
+    }
+
+}

@@ -1,0 +1,77 @@
+@import "../../styles/variables";
+@import "../../styles/typography";
+
+.contact {
+  margin: 7rem auto;
+  &-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    p {
+      width: 25vw;
+      color: $gray_3;
+    }
+  }
+  &-form {
+    display: grid;
+    margin-top: 9rem;
+    grid-template-columns: 20vw max-content;
+    justify-content: center;
+    &-info {
+      display: flex;
+      margin-bottom: 3rem;
+      &-icon {
+          margin-right: 2rem;
+      }
+      &-text {
+          width: 50%;
+      }
+    }
+    &--right {
+        form {
+            position: relative;
+            .error-btn {
+                background-color: $gray_5;
+                cursor: not-allowed;
+            }
+            .messageSent {
+                position: absolute;
+                display: inline-block;
+                color: green;
+                text-align: end;
+                width: 50%;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+    }
+  }
+
+}
+
+.field{
+  label {
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+  input, textarea {
+    height: 5rem;
+    width: 100%;
+    border: 1px solid $gray_5;
+    border-radius: .6rem;
+    margin: 1rem 0;
+    padding-left: 2rem;
+  }
+  &.message textarea{
+      padding-top: 2rem;
+      min-height: 8rem;
+      display: block;
+  }
+  .error {
+      color: $red;
+      text-align: end;
+  }
+}
+

@@ -1,0 +1,9 @@
+.App {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    overflow-x: hidden;
+}

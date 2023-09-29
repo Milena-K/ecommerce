@@ -1,0 +1,103 @@
+@import "../../styles/variables";
+@import "../../styles/typography";
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, max-content);
+    grid-row-gap: 3.7rem;
+    grid-column-gap: 5rem;
+    padding: 3rem;
+    border-top: 1px solid $gray_5;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 3rem 1rem;
+        grid-column-gap: 2rem;
+    }
+
+    &__company-info {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+    }
+
+    .company-name {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+    }
+
+    .footer__title {
+        grid-row: 1 / span 1;
+        color: $gray_4;
+        font-weight: 500;
+        font-size: 1rem;
+
+        &--links {
+            grid-column: 3 / span 1;
+        }
+        &--help {
+            grid-column: 4 / span 1;
+        }
+        &--newsletter {
+            grid-column: 6 / span 2;
+        }
+    }
+    &__links {
+        grid-column: 3 / span 1;
+        display: flex;
+        flex-direction: column;
+    }
+    &__help {
+        grid-column: 4 / span 1;
+        grid-row: 2 / span 1;
+        display: flex;
+        flex-direction: column;
+    }
+    &__newsletter {
+        display: flex;
+        grid-column: 6 / span 1;
+        grid-row: 2 / span 1;
+        align-items: start;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+        }
+        input {
+            border: none;
+            border-bottom: 2px solid black;
+            margin-right: .5rem;
+            padding-bottom: .5rem;
+            @media only screen and (max-width: $bp-medium) {
+                margin-bottom: 3rem;
+            }
+        }
+        .subscribe {
+            border: none;
+            text-transform: uppercase;
+            background-color: transparent;
+            border-bottom: 2px solid black;
+            font-weight: 500;
+            padding-bottom: .5rem;
+        }
+    }
+    hr {
+        grid-column: 1 / -1;
+        grid-row: 3 / span 1;
+        background-color: $gray_5;
+        border: none;
+        height: 1px;
+        margin-bottom: 1rem;
+    }
+    &__copyright {
+        grid-column: 1 / -1;
+        grid-row: 4 / span 1;
+    }
+    &__link {
+        color: black;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+    }
+}
+

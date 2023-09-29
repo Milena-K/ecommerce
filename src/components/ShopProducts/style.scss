@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+@import "../../styles/typography";
+
+.shop-products {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-gap: 1rem;
+    justify-content: center;
+    min-height: 30vh;
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: repeat(3, max-content);
+    }
+}

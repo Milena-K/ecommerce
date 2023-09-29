@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+@import "../../styles/typography";
+
+.banner {
+    padding: 6.5rem 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: $pink_2 ;
+    width: 100vw;
+    @media only screen and (max-width: $bp-medium) {
+        padding: 3rem 1rem;
+    }
+    &__item {
+        display: flex;
+        &-image {
+            @media only screen and (max-width: $bp-medium) {
+                img {
+                    width: 2.3rem;
+                }
+            }
+        }
+    }
+    &__details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: .5rem;
+
+        &-description {
+            color: $gray_3 !important;
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 1rem !important;
+            }
+        }
+        &-title {
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 1rem !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+@import "../../styles/typography";
+
+.breadcrumbs {
+    background: $pink_3;
+    &__text {
+        display: flex;
+        padding: 2rem 6rem;
+        align-items: center;
+        color: $gray_3;
+        .path {
+            padding: .5rem 0;
+            border-right: 1px solid $gray_3;
+            margin-right: 1rem;
+            .arrows {
+                padding: 0 1rem;
+                font-weight: 700;
+                color: black;
+            }
+        }
+        .product-title {
+            color: black;
+        }
+    }
+}

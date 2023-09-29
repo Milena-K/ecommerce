@@ -1,0 +1,138 @@
+@import "../../styles/variables";
+@import "../../styles/typography";
+
+.cart-side {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 60vh;
+    min-width: 27.8rem;
+    min-height: 48.6rem;
+    background-color: $white;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    animation-name: slide-in;
+    animation-duration: .3s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    padding: 2rem;
+
+
+    &__items {
+        flex-grow: 1;
+        overflow-y: scroll;
+    }
+    &__item {
+        display: flex;
+        margin-top: 1.3rem;
+        justify-content: space-between;
+
+        &-details {
+            display: flex;
+        }
+
+        &-text{
+            width: 60%;
+            padding: 1rem;
+            p {
+                margin-bottom: 1rem;
+            }
+        }
+
+        &-title {
+            font-weight: 500;
+        }
+
+        &-price {
+            .price {
+                font-weight: 500;
+                color: $primary;
+            }
+        }
+
+        .remove-item {
+            align-self: start;
+            background-color: $gray_4;
+            border-radius: 100%;
+            padding: .4rem .6rem;
+            margin-right: .3rem;
+            font-weight: 800;
+            color: $white;
+        }
+
+        &-img {
+            width: 7rem;
+            height: 7rem;
+            border-radius: .6rem;
+            overflow: hidden;
+            img {
+                width: 7rem;
+                height: 7rem;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
+
+    &__top {
+        display: flex;
+        border-bottom: 1px solid $gray_5;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__bottom {
+        justify-self: end;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+
+        button {
+            align-self: end;
+            width: max-content;
+            border: 1px solid $black;
+        }
+    }
+    &__price {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        .total-price {
+            color: $primary;
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+    animation-name: fade-in;
+    animation-duration: .3s;
+}
+
+@keyframes slide-in {
+    from {
+        right: -27.8rem;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(0,0,0,.7);
+    }
+}
