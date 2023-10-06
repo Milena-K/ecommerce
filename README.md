@@ -12,11 +12,11 @@ An example of a slice with reducers and thunks is in the features folder, take a
 
 https://dummyjson.com/docs is the API docs, the api route will be given.
 
-# Design
+## Design
 
 https://www.figma.com/file/7a1D68vj9u4Nf5XuPhrjp9/ecommerce-1?type=design&node-id=0%3A1&mode=design&t=Dtt15tLFTj26P33i-1
 
-# Tasks + Logic
+## Tasks + Logic
 
 Jira board
 
