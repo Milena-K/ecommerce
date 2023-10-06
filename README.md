@@ -6,11 +6,6 @@ You will be using https://styled-components.com/ + SASS, free of choice dependin
 
 ## Redux
 
-You will be using @redux-toolkit. It is preconfigured and ready to go. It's located in the redux folder.
-You will add your slices in redux/slices.
-Any complex reducers of a slice can be in redux/reducers/sliceName/reducer.ts
-Extra reducers and thunks api calls can be in the redux/actions/sliceName/actions.ts.
-
 An example of a slice with reducers and thunks is in the features folder, take a look, read the comments and make it similar to that.
 
 ## API
