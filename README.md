@@ -1,3 +1,5 @@
+This project was made during my internship at Atis Software.
+
 # Project 3 - E-Commerce
 
 This is your third project, an E-commerce app. It's a multi page application.
