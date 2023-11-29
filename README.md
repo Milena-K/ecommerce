@@ -1,5 +1,9 @@
 This project was made during my internship at Atis Software.
 
+# TODO:
+
+Make it responsive for mobile, now it's responsive only for desktop and tablet. 
+
 # Project 3 - E-Commerce
 
 This is your third project, an E-commerce app. It's a multi page application.
